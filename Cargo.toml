@@ -2,5 +2,9 @@
 name = "multiple-build-scripts-test-repo"
 version = "0.1.0"
 edition = "2024"
+build = "build1.rs"
 
 [dependencies]
+
+[build-dependencies]
+cc = "1.2.16"
