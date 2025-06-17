@@ -1,8 +1,10 @@
+cargo-features = ["multiple-build-scripts"]
+
 [package]
 name = "multiple-build-scripts-test-repo"
 version = "0.1.0"
 edition = "2024"
-build = "build1.rs"
+build = [ "build2.rs", "build1.rs"]
 
 [dependencies]
 
