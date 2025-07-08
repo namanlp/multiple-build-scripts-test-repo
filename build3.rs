@@ -6,4 +6,5 @@ fn main() {
         .cpp(true)
         .files(&["src/my_gcd.cpp"])
         .compile("cpp_lib");
+    println!("cargo::rustc-env=VAR=ThisIsVar2");
 }

@@ -17,4 +17,11 @@ fn main() {
     }
 
     println!("The gcd of {} and {} is {}", a, b, res);
+
+    let key = "VAR";
+
+    match std::env::var(key) {
+        Ok(val) => println!("OK! {}: {:?}", key, val),
+        Err(e) => println!("Error {}: {}", key, e),
+    }
 }
