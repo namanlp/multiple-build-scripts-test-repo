@@ -1,3 +1,6 @@
+include!(concat!(env!("OUT_DIR"), "/hello.rs"));
+include!(concat!(env!("OUT_DIR"), "/hello2.rs"));
+
 unsafe extern "C" {
     fn gcd(a: isize, b: isize) -> isize;
     fn scan_and_print() -> isize;
@@ -5,6 +8,10 @@ unsafe extern "C" {
 
 
 fn main() {
+    println!("{}", message1());
+    // println!("{}", message2());
+    println!("{}", env!("OUT_DIR"));
+
     let a;
     let b;
     let res;
