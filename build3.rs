@@ -19,6 +19,7 @@ fn main() {
         "pub fn message1() -> &'static str {
             \"Hello, World1!\"
         }
-        "
-    ).unwrap();
+        ",
+    )
+    .unwrap();
 }

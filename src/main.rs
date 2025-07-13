@@ -6,7 +6,6 @@ unsafe extern "C" {
     fn scan_and_print() -> isize;
 }
 
-
 fn main() {
     println!("{}", message1());
     // println!("{}", message2());

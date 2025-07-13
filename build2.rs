@@ -2,7 +2,7 @@ use std::env;
 use std::fs;
 use std::path::Path;
 
-fn main(){
+fn main() {
     cc::Build::new()
         .files(&["src/scanning_and_printing.c"])
         .compile("c_lib");
@@ -19,6 +19,7 @@ fn main(){
         "pub fn message1() -> &'static str {
             \"Hello, World1234!\"
         }
-        "
-    ).unwrap();
+        ",
+    )
+    .unwrap();
 }
