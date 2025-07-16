@@ -1,4 +1,4 @@
-include!(concat!(env!("OUT_DIR"), "/hello.rs"));
+include!(concat!(env!("OUT_DIR"), "/hello1.rs"));
 include!(concat!(env!("OUT_DIR"), "/hello2.rs"));
 
 unsafe extern "C" {
