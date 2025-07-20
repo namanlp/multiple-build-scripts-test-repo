@@ -8,3 +8,8 @@ Running with nightly
 rustup run nightly cargo run
 ```
 
+Running with custom cargo build
+
+```
+rustup run nightly <path>/cargo/target/release/cargo run
+```
