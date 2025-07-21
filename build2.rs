@@ -17,7 +17,7 @@ fn main() {
     fs::write(
         &dest_path,
         "pub fn message1() -> &'static str {
-            \"Hello, World1234!\"
+            \"Hello, World1!\"
         }
         ",
     )
