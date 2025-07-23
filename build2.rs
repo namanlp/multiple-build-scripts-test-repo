@@ -10,7 +10,7 @@ fn main() {
         .cpp(true)
         .files(&["src/my_gcd.cpp"])
         .compile("cpp_lib");
-    println!("cargo::rustc-env=VAR=ThisIsVar1");
+    println!("cargo::rustc-env=VAR=ThisIsVar2");
 
     let out_dir = env::var_os("OUT_DIR").unwrap();
     let dest_path = Path::new(&out_dir).join("hello1.rs");

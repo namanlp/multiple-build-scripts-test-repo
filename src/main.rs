@@ -1,5 +1,5 @@
 include!(concat!(env!("OUT_DIR"), "/hello1.rs"));
-include!(concat!(env!("OUT_DIR"), "/hello2.rs"));
+// include!(concat!(env!("OUT_DIR"), "/hello2.rs"));
 
 unsafe extern "C" {
     fn gcd(a: isize, b: isize) -> isize;
