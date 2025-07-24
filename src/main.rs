@@ -15,7 +15,6 @@ fn main() {
     let b;
     let res;
 
-    // FFI calls require an unsafe block.
     unsafe {
         a = scan_and_print();
         b = scan_and_print();
